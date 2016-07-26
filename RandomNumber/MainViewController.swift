@@ -26,6 +26,7 @@ class MainViewController: UIViewController {
         }
     }
     @IBAction func doneButton(sender: AnyObject) {
+        view.endEditing(true)
         UIView.animateWithDuration(1) {
             self.settingsView.alpha = 0
         }
@@ -38,9 +39,9 @@ class MainViewController: UIViewController {
         resultLabel.text = String(randomNumber)
         citiesArray.addObject(String(randomNumber))
     }
-    @IBAction func printArray(sender: AnyObject) {
-        print(citiesArray)
-    }
+//    @IBAction func printArray(sender: AnyObject) {
+//        print(citiesArray)
+//    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
