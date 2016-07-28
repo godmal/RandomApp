@@ -71,6 +71,7 @@
                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
+                        <outlet property="doneButton" destination="0k8-Vi-zM5" id="2i0-nL-J3t"/>
                         <outlet property="maxValueField" destination="LOr-Zs-cR7" id="KbC-6r-Hbe"/>
                         <outlet property="minValueField" destination="xag-cD-Tad" id="d26-g3-ufT"/>
                         <outlet property="resultLabel" destination="chP-CS-ypq" id="AGU-G3-qwJ"/>

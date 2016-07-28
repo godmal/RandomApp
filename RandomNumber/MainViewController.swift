@@ -8,6 +8,8 @@
 import UIKit
 
 class MainViewController: UIViewController {
+    
+    @IBOutlet weak var doneButton: UIButton!
     @IBOutlet weak var settingsView: UIView!
     @IBOutlet weak var minValueField: UITextField!
     @IBOutlet weak var maxValueField: UITextField!
@@ -19,6 +21,8 @@ class MainViewController: UIViewController {
         citiesArray = NSMutableArray()
         settingsView.layer.cornerRadius = 15.0
         settingsView.clipsToBounds = true
+        self.doneButton.layer.borderColor = UIColor.blackColor().CGColor
+        self.doneButton.layer.borderWidth = 1.0
     }
     @IBAction func showMenu(sender: AnyObject) {
         UIView.animateWithDuration(1) { 
